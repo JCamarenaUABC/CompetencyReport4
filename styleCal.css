@@ -1,0 +1,68 @@
+:root{
+    --Amarillo: #E5EEC1;
+    --VerdePastelo: #A2D5AC;
+    --Diamantito: #3AADA8;
+    --GrisDiaman: #557C83;
+}
+body{
+    background-color: #1C1C1E;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+    height: 5rem;
+    border-top: 2px dashed var(--GrisDiaman);
+    border-bottom: 2px dashed var(--GrisDiaman);
+    color: var(--Amarillo);
+
+}
+
+h2{
+    margin-top: 0rem;
+    font-size: 1.6rem;
+
+
+    text-align: center;
+    border-bottom: 2px dashed var(--GrisDiaman);
+}
+
+
+    #Resultados{
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: minmax(auto, auto);        
+    }
+
+
+
+#Resultados div{
+    background-color: var(--Amarillo);
+    color: var(--GrisDiaman);
+    font-weight: bold;   
+    text-align: center;
+
+    font-size: 1.6rem;
+    padding:1rem;
+    border: 1px dashed var(--GrisDiaman);
+    border-radius: 10%;
+    margin: 1rem;
+}
+
+#Resultados div:hover{
+    background-color: var(--Diamantito);
+    color: var(--Amarillo);
+
+}
+
+@media(min-width:700px){
+
+    #Resultados{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: minmax(auto, auto);
+        
+    }
+}
+
+
